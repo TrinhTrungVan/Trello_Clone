@@ -1,0 +1,33 @@
+@use "../../scss" as *;
+
+.info_container {
+    @include flex(center, center);
+    border-radius: "1000px";
+    overflow: hidden;
+
+    i {
+        @include flex(center, center);
+        cursor: pointer;
+        font-size: 20px;
+        height: 32px;
+        width: 32px;
+        border-radius: 3px;
+        margin: 0 4px;
+        color: white;
+
+        &:hover {
+            background-color: $background-hover;
+        }
+    }
+
+    .user_img {
+        background-image: url("https://i.pinimg.com/564x/5c/99/47/5c9947aa9b02fa07cadde7e8a9a2d837.jpg");
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 100px;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+}

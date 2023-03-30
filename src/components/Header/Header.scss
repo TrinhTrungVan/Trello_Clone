@@ -1,0 +1,32 @@
+@use "../../scss" as *;
+
+.header_container {
+    @include flex(center, center);
+    width: 100%;
+    background-color: #026aa7;
+    height: 44px;
+
+    .wrapper {
+        @include flex(center, space-between);
+        width: 100%;
+        max-width: 1400px;
+        height: 32px;
+
+        .logo {
+            @include flex(center, center);
+            color: white;
+            font-size: 20px;
+            margin-right: 10px;
+            font-weight: 500;
+
+            i {
+                font-size: 32px;
+                margin-right: 8px;
+            }
+        }
+
+        .space {
+            flex: 1;
+        }
+    }
+}

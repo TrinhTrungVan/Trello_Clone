@@ -1,0 +1,75 @@
+@use "../../scss/" as *;
+
+.todoitem_container {
+    @include flex(center, space-between);
+    width: 264px;
+    min-height: 44px;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    user-select: none;
+    margin: 2px 4px 4px;
+    cursor: grab;
+
+    .name {
+        margin: 8px 0 8px 8px;
+        max-width: 190px;
+        overflow-wrap: break-word;
+        user-select: none;
+    }
+
+    .edit_input {
+        width: 200px;
+        height: 36px;
+        margin-left: 4px;
+        padding-left: 4px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        outline: none;
+        font-family: $font-family;
+    }
+
+    .actions {
+        @include flex(center, center);
+        align-self: flex-start;
+        margin-top: 4px;
+        flex-direction: row;
+        height: 36px;
+        width: 60px;
+        cursor: default;
+
+        .edit_btn {
+            @include flex(center, center);
+            margin-right: 4px;
+            border-radius: 3px;
+            width: 24px;
+            height: 24px;
+            i {
+                font-size: 16px;
+            }
+
+            .bx.bx-check {
+                font-size: 22px;
+            }
+
+            &:hover {
+                background-color: #53bf9d;
+                color: white;
+            }
+        }
+
+        .delete_btn {
+            @include flex(center, center);
+            border-radius: 3px;
+            width: 24px;
+            height: 24px;
+            i {
+                font-size: 22px;
+            }
+            &:hover {
+                background-color: #f94c66;
+                color: white;
+            }
+        }
+    }
+}

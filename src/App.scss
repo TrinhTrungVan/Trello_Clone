@@ -1,0 +1,45 @@
+@use "./scss/" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family;
+    background-image: url("./assets//image//background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#ghost {
+    position: absolute;
+    border: 2px solid #000;
+    pointer-events: none;
+    z-index: 2001;
+}
+
+#placeholder {
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    user-select: none;
+    pointer-events: none;
+    margin: 2px 0 4px 4px;
+}

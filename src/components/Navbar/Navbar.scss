@@ -1,0 +1,38 @@
+@use "../../scss" as *;
+
+.navbar_container {
+    @include flex(center, center);
+
+    .create {
+        height: 32px;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        background-color: #014a75;
+        padding: 0 12px;
+        margin-left: 8px;
+
+        &:hover {
+            background-color: $background-hover;
+        }
+    }
+}
+
+.navbar_item {
+    @include flex(center, center);
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: transparent;
+    padding: 0 8px;
+    margin: 0 2px;
+
+    &:hover {
+        background-color: $background-hover;
+    }
+    i {
+        font-size: 20px;
+        margin-left: 2px;
+    }
+}

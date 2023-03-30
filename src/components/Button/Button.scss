@@ -1,0 +1,15 @@
+@use "../../scss/" as *;
+
+.button_container {
+    @include flex(center, center);
+    flex-direction: row;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    height: 36px;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: rgba(black, 0.1);
+    }
+}
